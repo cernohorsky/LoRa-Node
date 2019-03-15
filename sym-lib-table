@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Arduino_Mini-rescue)(type Legacy)(uri ${KIPRJMOD}/Arduino_Mini-rescue.lib)(options "")(descr ""))
+  (lib (name MCP73871T-2CCI_ML)(type Legacy)(uri C:/Users/r.cernohorsky/Documents/KiCAD-lib/MCP73871T-2CCI_ML.lib)(options "")(descr ""))
+  (lib (name LoRaNode-rescue)(type Legacy)(uri ${KIPRJMOD}/LoRaNode-rescue.lib)(options "")(descr ""))
+)

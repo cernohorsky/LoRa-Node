@@ -1,0 +1,1934 @@
+EESchema Schematic File Version 4
+LIBS:LoRaNode-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "sam. 04 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LoRaNode-rescue:RFM95W-868S2-RESCUE-Arduino_Mini-Arduino_Mini-rescue U1
+U 1 1 5A1D2B73
+P 9100 5000
+F 0 "U1" H 9100 5678 50  0000 C CNN
+F 1 "RFM95W-868S2" H 9450 5450 50  0000 C CNN
+F 2 "footprints:RFM95W" H 5800 6650 50  0001 C CNN
+F 3 "" H 5800 6650 50  0001 C CNN
+	1    9100 5000
+	1    0    0    -1  
+$EndComp
+Text Label 8600 4700 2    60   ~ 0
+13(SCK)
+Text Label 8600 4900 2    60   ~ 0
+12(**/MOSI)
+Text Label 8600 4800 2    60   ~ 0
+11(MISO)
+Text Label 8600 5000 2    60   ~ 0
+10(**/SS)
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR09
+U 1 1 5A1D2CAF
+P 9100 4450
+F 0 "#PWR09" H 9100 4300 50  0001 C CNN
+F 1 "+3.3V" H 9115 4623 50  0000 C CNN
+F 2 "" H 9100 4450 50  0001 C CNN
+F 3 "" H 9100 4450 50  0001 C CNN
+	1    9100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4450 9100 4500
+Wire Wire Line
+	9000 5600 9000 5650
+Wire Wire Line
+	9000 5650 9100 5650
+Wire Wire Line
+	9200 5650 9200 5600
+Wire Wire Line
+	9100 5600 9100 5650
+Connection ~ 9100 5650
+Text Label 9600 5300 0    60   ~ 0
+D6
+Text Label 9600 5200 0    60   ~ 0
+D7
+Text Label 8600 5200 2    60   ~ 0
+D9
+NoConn ~ 9600 4900
+NoConn ~ 9600 5000
+NoConn ~ 9600 5100
+Text Label 10350 4700 0    60   ~ 0
+ANT
+$Comp
+L LoRaNode-rescue:C-RESCUE-Arduino_Mini-Arduino_Mini-rescue C1
+U 1 1 5A1D4CFC
+P 9900 4900
+F 0 "C1" H 10015 4946 50  0000 L CNN
+F 1 "2p7" H 10015 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9938 4750 50  0001 C CNN
+F 3 "" H 9900 4900 50  0001 C CNN
+	1    9900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:C-RESCUE-Arduino_Mini-Arduino_Mini-rescue C2
+U 1 1 5A1D4D32
+P 10350 4900
+F 0 "C2" H 10465 4946 50  0000 L CNN
+F 1 "dnp" H 10465 4855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10388 4750 50  0001 C CNN
+F 3 "" H 10350 4900 50  0001 C CNN
+	1    10350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:L-RESCUE-Arduino_Mini-Arduino_Mini-rescue L1
+U 1 1 5A1D4D69
+P 10150 4700
+F 0 "L1" V 10340 4700 50  0000 C CNN
+F 1 "1n8" V 10249 4700 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0402" H 10150 4700 50  0001 C CNN
+F 3 "" H 10150 4700 50  0001 C CNN
+	1    10150 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 4700 9900 4700
+Wire Wire Line
+	9900 4750 9900 4700
+Connection ~ 9900 4700
+Wire Wire Line
+	10300 4700 10350 4700
+Wire Wire Line
+	10350 4700 10350 4750
+Wire Wire Line
+	9900 5050 9900 5100
+Wire Wire Line
+	9900 5100 10150 5100
+Wire Wire Line
+	10350 5100 10350 5050
+Wire Wire Line
+	10150 5150 10150 5100
+Connection ~ 10150 5100
+$Comp
+L LoRaNode-rescue:CONN_01X04-RESCUE-Arduino_Mini-Arduino_Mini-rescue J1
+U 1 1 5A1D6448
+P 7750 5450
+F 0 "J1" H 7828 5491 50  0000 L CNN
+F 1 "CONN_01X04" H 7828 5400 50  0000 L CNN
+F 2 "Mlab_CON:RJ12GLP-AMP(RJ12)" H 7750 5450 50  0001 C CNN
+F 3 "" H 7750 5450 50  0001 C CNN
+	1    7750 5450
+	1    0    0    -1  
+$EndComp
+Text Label 7550 5300 2    60   ~ 0
+A4
+Text Label 7550 5400 2    60   ~ 0
+A5
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR012
+U 1 1 5A1D670C
+P 7300 5500
+F 0 "#PWR012" H 7300 5350 50  0001 C CNN
+F 1 "+3.3V" H 7315 5673 50  0000 C CNN
+F 2 "" H 7300 5500 50  0001 C CNN
+F 3 "" H 7300 5500 50  0001 C CNN
+	1    7300 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5500 7300 5500
+Wire Wire Line
+	7550 5600 7300 5600
+Wire Wire Line
+	7300 5600 7300 5650
+Wire Wire Line
+	9100 5650 9200 5650
+Wire Wire Line
+	9100 5650 9100 5700
+Wire Wire Line
+	9900 4700 10000 4700
+Wire Wire Line
+	10150 5100 10350 5100
+$Comp
+L MLAB_IO:MCP73871 U2
+U 1 1 5B041360
+P 4200 2250
+F 0 "U2" H 4650 2900 50  0000 C CNN
+F 1 "MCP73871" H 3850 2900 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 4200 2350 50  0001 C CNN
+F 3 "" H 4200 2350 50  0001 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R5
+U 1 1 5B04369C
+P 3200 1500
+F 0 "R5" H 3270 1546 50  0000 L CNN
+F 1 "100k" H 3270 1455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3130 1500 50  0001 C CNN
+F 3 "" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R4
+U 1 1 5B043778
+P 3200 1100
+F 0 "R4" H 3270 1146 50  0000 L CNN
+F 1 "270k" H 3270 1055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3130 1100 50  0001 C CNN
+F 3 "" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5B0437FB
+P 2800 1700
+F 0 "R3" H 2870 1746 50  0000 L CNN
+F 1 "1k" H 2870 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 2730 1700 50  0001 C CNN
+F 3 "" H 2800 1700 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5B04384A
+P 2550 1700
+F 0 "R2" H 2620 1746 50  0000 L CNN
+F 1 "1k" H 2620 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 2480 1700 50  0001 C CNN
+F 3 "" H 2550 1700 50  0001 C CNN
+	1    2550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5B043882
+P 2300 1700
+F 0 "R1" H 2370 1746 50  0000 L CNN
+F 1 "1k" H 2370 1655 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 2230 1700 50  0001 C CNN
+F 3 "" H 2300 1700 50  0001 C CNN
+	1    2300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1650 3200 1700
+Wire Wire Line
+	3200 1250 3200 1300
+$Comp
+L power:VCC #PWR014
+U 1 1 5B0454CF
+P 3200 900
+F 0 "#PWR014" H 3200 750 50  0001 C CNN
+F 1 "VCC" H 3217 1073 50  0000 C CNN
+F 2 "" H 3200 900 50  0001 C CNN
+F 3 "" H 3200 900 50  0001 C CNN
+	1    3200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 900  3200 950 
+Wire Wire Line
+	3550 1750 3500 1750
+Wire Wire Line
+	3500 1750 3500 1300
+Wire Wire Line
+	3500 1300 3200 1300
+Connection ~ 3200 1300
+Wire Wire Line
+	3200 1300 3200 1350
+$Comp
+L device:LED D2
+U 1 1 5B04833B
+P 2300 1350
+F 0 "D2" V 2338 1233 50  0000 R CNN
+F 1 "CHRG" V 2247 1233 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 2300 1350 50  0001 C CNN
+F 3 "~" H 2300 1350 50  0001 C CNN
+	1    2300 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:LED D3
+U 1 1 5B048400
+P 2550 1350
+F 0 "D3" V 2588 1233 50  0000 R CNN
+F 1 "DONE" V 2497 1233 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 2550 1350 50  0001 C CNN
+F 3 "~" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:LED D4
+U 1 1 5B04849C
+P 2800 1350
+F 0 "D4" V 2838 1233 50  0000 R CNN
+F 1 "PWR" V 2747 1233 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 2800 1350 50  0001 C CNN
+F 3 "~" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR015
+U 1 1 5B048529
+P 2550 1100
+F 0 "#PWR015" H 2550 950 50  0001 C CNN
+F 1 "VCC" H 2567 1273 50  0000 C CNN
+F 2 "" H 2550 1100 50  0001 C CNN
+F 3 "" H 2550 1100 50  0001 C CNN
+	1    2550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR016
+U 1 1 5B0485AB
+P 3200 1700
+F 0 "#PWR016" H 3200 1450 50  0001 C CNN
+F 1 "Earth" H 3200 1550 50  0001 C CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "~" H 3200 1700 50  0001 C CNN
+	1    3200 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1200 2300 1150
+Wire Wire Line
+	2300 1150 2550 1150
+Wire Wire Line
+	2800 1150 2800 1200
+Wire Wire Line
+	2550 1100 2550 1150
+Connection ~ 2550 1150
+Wire Wire Line
+	2550 1150 2800 1150
+Wire Wire Line
+	2550 1200 2550 1150
+Wire Wire Line
+	3550 1900 2800 1900
+Wire Wire Line
+	2800 1900 2800 1850
+Wire Wire Line
+	3550 2000 2550 2000
+Wire Wire Line
+	2550 2000 2550 1850
+Wire Wire Line
+	3550 2100 2300 2100
+Wire Wire Line
+	2300 2100 2300 1850
+$Comp
+L power:VCC #PWR017
+U 1 1 5B057AA8
+P 3400 2350
+F 0 "#PWR017" H 3400 2200 50  0001 C CNN
+F 1 "VCC" H 3417 2523 50  0000 C CNN
+F 2 "" H 3400 2350 50  0001 C CNN
+F 3 "" H 3400 2350 50  0001 C CNN
+	1    3400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2250 3500 2250
+Wire Wire Line
+	3500 2250 3500 2350
+Wire Wire Line
+	3500 2550 3550 2550
+Wire Wire Line
+	3550 2450 3500 2450
+Connection ~ 3500 2450
+Wire Wire Line
+	3500 2450 3500 2550
+Wire Wire Line
+	3550 2350 3500 2350
+Connection ~ 3500 2350
+Wire Wire Line
+	3500 2350 3500 2400
+Wire Wire Line
+	3500 2400 3400 2400
+Wire Wire Line
+	3400 2400 3400 2350
+Connection ~ 3500 2400
+Wire Wire Line
+	3500 2400 3500 2450
+$Comp
+L device:R R7
+U 1 1 5B0619AC
+P 3500 3000
+F 0 "R7" H 3570 3046 50  0000 L CNN
+F 1 "100k" H 3570 2955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3430 3000 50  0001 C CNN
+F 3 "" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R6
+U 1 1 5B061A6B
+P 3250 3000
+F 0 "R6" H 3320 3046 50  0000 L CNN
+F 1 "2k" H 3320 2955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3180 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2800 3500 2800
+Wire Wire Line
+	3500 2800 3500 2850
+Wire Wire Line
+	3550 2700 3250 2700
+Wire Wire Line
+	3250 2700 3250 2850
+$Comp
+L power:Earth #PWR018
+U 1 1 5B066489
+P 3500 3200
+F 0 "#PWR018" H 3500 2950 50  0001 C CNN
+F 1 "Earth" H 3500 3050 50  0001 C CNN
+F 2 "" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+	1    3500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR019
+U 1 1 5B0664EC
+P 3250 3200
+F 0 "#PWR019" H 3250 2950 50  0001 C CNN
+F 1 "Earth" H 3250 3050 50  0001 C CNN
+F 2 "" H 3250 3200 50  0001 C CNN
+F 3 "~" H 3250 3200 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3150 3500 3200
+Wire Wire Line
+	3250 3150 3250 3200
+$Comp
+L power:Earth #PWR020
+U 1 1 5B06B258
+P 4200 3200
+F 0 "#PWR020" H 4200 2950 50  0001 C CNN
+F 1 "Earth" H 4200 3050 50  0001 C CNN
+F 2 "" H 4200 3200 50  0001 C CNN
+F 3 "~" H 4200 3200 50  0001 C CNN
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4100 3050
+Wire Wire Line
+	4100 3050 4200 3050
+Wire Wire Line
+	4300 3050 4300 3000
+Wire Wire Line
+	4200 3000 4200 3050
+Connection ~ 4200 3050
+Wire Wire Line
+	4200 3050 4300 3050
+Wire Wire Line
+	4200 3050 4200 3200
+$Comp
+L device:R R8
+U 1 1 5B073583
+P 5000 2650
+F 0 "R8" V 4793 2650 50  0000 C CNN
+F 1 "1k54" V 4884 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4930 2650 50  0001 C CNN
+F 3 "" H 5000 2650 50  0001 C CNN
+	1    5000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R9
+U 1 1 5B07363B
+P 5200 2850
+F 0 "R9" H 5130 2804 50  0000 R CNN
+F 1 "THERM 10k" V 5300 3200 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 5130 2850 50  0001 C CNN
+F 3 "" H 5200 2850 50  0001 C CNN
+	1    5200 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R10
+U 1 1 5B073704
+P 5450 2850
+F 0 "R10" H 5380 2804 50  0000 R CNN
+F 1 "69k8" H 5380 2895 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" V 5380 2850 50  0001 C CNN
+F 3 "" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2650 4850 2650
+Wire Wire Line
+	5150 2650 5200 2650
+Wire Wire Line
+	5200 2650 5200 2700
+Wire Wire Line
+	5200 2650 5450 2650
+Wire Wire Line
+	5450 2650 5450 2700
+Connection ~ 5200 2650
+$Comp
+L power:Earth #PWR021
+U 1 1 5B07C2FC
+P 5200 3200
+F 0 "#PWR021" H 5200 2950 50  0001 C CNN
+F 1 "Earth" H 5200 3050 50  0001 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "~" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR022
+U 1 1 5B07C339
+P 5450 3200
+F 0 "#PWR022" H 5450 2950 50  0001 C CNN
+F 1 "Earth" H 5450 3050 50  0001 C CNN
+F 2 "" H 5450 3200 50  0001 C CNN
+F 3 "~" H 5450 3200 50  0001 C CNN
+	1    5450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3000 5200 3200
+Wire Wire Line
+	5450 3000 5450 3200
+Wire Wire Line
+	4800 2150 4850 2150
+Wire Wire Line
+	4850 2150 4850 2250
+Wire Wire Line
+	4850 2350 4800 2350
+Wire Wire Line
+	4800 2250 4850 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	4850 2250 4850 2350
+$Comp
+L device:C C6
+U 1 1 5B0895B0
+P 5700 2450
+F 0 "C6" H 5815 2496 50  0000 L CNN
+F 1 "10u" H 5815 2405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5738 2300 50  0001 C CNN
+F 3 "" H 5700 2450 50  0001 C CNN
+	1    5700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR023
+U 1 1 5B08CE96
+P 5700 2650
+F 0 "#PWR023" H 5700 2400 50  0001 C CNN
+F 1 "Earth" H 5700 2500 50  0001 C CNN
+F 2 "" H 5700 2650 50  0001 C CNN
+F 3 "~" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2600 5700 2650
+$Comp
+L device:C C5
+U 1 1 5B090E2F
+P 5700 1900
+F 0 "C5" H 5815 1946 50  0000 L CNN
+F 1 "10u" H 5815 1855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5738 1750 50  0001 C CNN
+F 3 "" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR024
+U 1 1 5B090E36
+P 5700 2100
+F 0 "#PWR024" H 5700 1850 50  0001 C CNN
+F 1 "Earth" H 5700 1950 50  0001 C CNN
+F 2 "" H 5700 2100 50  0001 C CNN
+F 3 "~" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2050 5700 2100
+Wire Wire Line
+	4850 2250 5700 2250
+Wire Wire Line
+	5700 2250 5700 2300
+Wire Wire Line
+	4800 1850 4850 1850
+Wire Wire Line
+	4850 1850 4850 1750
+Wire Wire Line
+	4850 1750 4800 1750
+Wire Wire Line
+	4850 1750 5700 1750
+Connection ~ 4850 1750
+$Comp
+L power:VCC #PWR025
+U 1 1 5B0A7591
+P 4200 1450
+F 0 "#PWR025" H 4200 1300 50  0001 C CNN
+F 1 "VCC" H 4217 1623 50  0000 C CNN
+F 2 "" H 4200 1450 50  0001 C CNN
+F 3 "" H 4200 1450 50  0001 C CNN
+	1    4200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1550 4150 1500
+Wire Wire Line
+	4150 1500 4200 1500
+Wire Wire Line
+	4200 1500 4200 1450
+Wire Wire Line
+	4250 1550 4250 1500
+Wire Wire Line
+	4250 1500 4200 1500
+Connection ~ 4200 1500
+Text Notes 2000 3150 0    50   ~ 0
+Charge Rate = 1000V/PROG1\n1k = 1000 mA\n2k =   500 mA
+Text Notes 4250 3550 0    50   ~ 0
+No Thermistor:       RT1 = 0R, RT2 = 10k\n10k NTC Thermistor: RT1 = 1k54, RT2 = 69k8
+$Comp
+L device:C C4
+U 1 1 5B0BA4D0
+P 1800 1650
+F 0 "C4" H 1915 1696 50  0000 L CNN
+F 1 "10u" H 1915 1605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1838 1500 50  0001 C CNN
+F 3 "" H 1800 1650 50  0001 C CNN
+	1    1800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C3
+U 1 1 5B0BA5B5
+P 1100 1650
+F 0 "C3" H 1218 1696 50  0000 L CNN
+F 1 "4700uF/10V" H 1218 1605 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D12.5mm_P25mm" H 1138 1500 50  0001 C CNN
+F 3 "" H 1100 1650 50  0001 C CNN
+	1    1100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D1
+U 1 1 5B0BA70B
+P 900 1450
+F 0 "D1" H 900 1234 50  0000 C CNN
+F 1 "MBR120VLSFT1G" H 900 1325 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0001 C CNN
+	1    900  1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1050 1450 1100 1450
+Wire Wire Line
+	1100 1450 1100 1500
+Wire Wire Line
+	1100 1450 1800 1450
+Wire Wire Line
+	1800 1450 1800 1500
+Connection ~ 1100 1450
+$Comp
+L power:Earth #PWR026
+U 1 1 5B0C3906
+P 1800 1850
+F 0 "#PWR026" H 1800 1600 50  0001 C CNN
+F 1 "Earth" H 1800 1700 50  0001 C CNN
+F 2 "" H 1800 1850 50  0001 C CNN
+F 3 "~" H 1800 1850 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR027
+U 1 1 5B0C3AB5
+P 1100 1850
+F 0 "#PWR027" H 1100 1600 50  0001 C CNN
+F 1 "Earth" H 1100 1700 50  0001 C CNN
+F 2 "" H 1100 1850 50  0001 C CNN
+F 3 "~" H 1100 1850 50  0001 C CNN
+	1    1100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1800 1800 1850
+Wire Wire Line
+	1100 1800 1100 1850
+Text Label 750  1450 2    50   ~ 0
+VSOL
+Text Label 5700 2250 0    50   ~ 0
+VBAT
+Text Label 5700 1750 0    50   ~ 0
+VOUT
+$Comp
+L MLAB_IO:TPS63031 U3
+U 1 1 5B0CFB5D
+P 4000 4600
+F 0 "U3" H 4250 5000 50  0000 C CNN
+F 1 "TPS63031" H 3850 5000 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PWSON-N10" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C7
+U 1 1 5B0D01DF
+P 2800 4650
+F 0 "C7" H 2915 4696 50  0000 L CNN
+F 1 "10u" H 2915 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2838 4500 50  0001 C CNN
+F 3 "" H 2800 4650 50  0001 C CNN
+	1    2800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR028
+U 1 1 5B0D01E6
+P 2800 4850
+F 0 "#PWR028" H 2800 4600 50  0001 C CNN
+F 1 "Earth" H 2800 4700 50  0001 C CNN
+F 2 "" H 2800 4850 50  0001 C CNN
+F 3 "~" H 2800 4850 50  0001 C CNN
+	1    2800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4800 2800 4850
+$Comp
+L device:C C9
+U 1 1 5B0D500E
+P 4750 4650
+F 0 "C9" H 4865 4696 50  0000 L CNN
+F 1 "10u" H 4865 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4788 4500 50  0001 C CNN
+F 3 "" H 4750 4650 50  0001 C CNN
+	1    4750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR029
+U 1 1 5B0D5015
+P 4750 4850
+F 0 "#PWR029" H 4750 4600 50  0001 C CNN
+F 1 "Earth" H 4750 4700 50  0001 C CNN
+F 2 "" H 4750 4850 50  0001 C CNN
+F 3 "~" H 4750 4850 50  0001 C CNN
+	1    4750 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4800 4750 4850
+$Comp
+L device:C C10
+U 1 1 5B0D9EA0
+P 5150 4650
+F 0 "C10" H 5350 4600 50  0000 R CNN
+F 1 "10u" H 5400 4700 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 5188 4500 50  0001 C CNN
+F 3 "" H 5150 4650 50  0001 C CNN
+	1    5150 4650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR030
+U 1 1 5B0D9EA7
+P 5150 4850
+F 0 "#PWR030" H 5150 4600 50  0001 C CNN
+F 1 "Earth" H 5150 4700 50  0001 C CNN
+F 2 "" H 5150 4850 50  0001 C CNN
+F 3 "~" H 5150 4850 50  0001 C CNN
+	1    5150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4800 5150 4850
+$Comp
+L device:L L2
+U 1 1 5B0DEE3E
+P 4000 4100
+F 0 "L2" V 4190 4100 50  0000 C CNN
+F 1 "1u5" V 4099 4100 50  0000 C CNN
+F 2 "Inductors:Inductor_Wurth_MAPI-3012" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4350 3500 4350
+Wire Wire Line
+	3500 4350 3500 4100
+Wire Wire Line
+	3500 4100 3850 4100
+Wire Wire Line
+	4400 4350 4450 4350
+Wire Wire Line
+	4450 4350 4450 4100
+Wire Wire Line
+	4450 4100 4150 4100
+Wire Wire Line
+	4400 4650 4450 4650
+Wire Wire Line
+	4450 4650 4450 4450
+Wire Wire Line
+	4450 4450 4400 4450
+Wire Wire Line
+	4450 4450 4750 4450
+Wire Wire Line
+	4750 4450 4750 4500
+Connection ~ 4450 4450
+Wire Wire Line
+	4750 4450 5150 4450
+Wire Wire Line
+	5150 4450 5150 4500
+Connection ~ 4750 4450
+$Comp
+L power:Earth #PWR031
+U 1 1 5B106413
+P 4450 4900
+F 0 "#PWR031" H 4450 4650 50  0001 C CNN
+F 1 "Earth" H 4450 4750 50  0001 C CNN
+F 2 "" H 4450 4900 50  0001 C CNN
+F 3 "~" H 4450 4900 50  0001 C CNN
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR032
+U 1 1 5B106464
+P 4000 5250
+F 0 "#PWR032" H 4000 5000 50  0001 C CNN
+F 1 "Earth" H 4000 5100 50  0001 C CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR033
+U 1 1 5B1064B5
+P 3500 4950
+F 0 "#PWR033" H 3500 4700 50  0001 C CNN
+F 1 "Earth" H 3500 4800 50  0001 C CNN
+F 2 "" H 3500 4950 50  0001 C CNN
+F 3 "~" H 3500 4950 50  0001 C CNN
+	1    3500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C8
+U 1 1 5B10662E
+P 3200 4750
+F 0 "C8" H 3315 4796 50  0000 L CNN
+F 1 "100n" H 3315 4705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3238 4600 50  0001 C CNN
+F 3 "" H 3200 4750 50  0001 C CNN
+	1    3200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR034
+U 1 1 5B106635
+P 3200 4950
+F 0 "#PWR034" H 3200 4700 50  0001 C CNN
+F 1 "Earth" H 3200 4800 50  0001 C CNN
+F 2 "" H 3200 4950 50  0001 C CNN
+F 3 "~" H 3200 4950 50  0001 C CNN
+	1    3200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4900 3200 4950
+Wire Wire Line
+	3500 4950 3500 4850
+Wire Wire Line
+	3500 4850 3550 4850
+Wire Wire Line
+	3550 4750 3500 4750
+Wire Wire Line
+	3500 4750 3500 4650
+Wire Wire Line
+	3500 4650 3550 4650
+Wire Wire Line
+	3500 4650 3500 4550
+Wire Wire Line
+	3500 4550 3550 4550
+Connection ~ 3500 4650
+Wire Wire Line
+	3500 4550 3200 4550
+Wire Wire Line
+	3200 4550 3200 4600
+Connection ~ 3500 4550
+Wire Wire Line
+	4000 5200 4000 5250
+Wire Wire Line
+	4400 4850 4450 4850
+Wire Wire Line
+	4450 4850 4450 4900
+Wire Wire Line
+	3550 4450 2800 4450
+Wire Wire Line
+	2800 4450 2800 4500
+Text Label 2800 4450 2    50   ~ 0
+VOUT
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR035
+U 1 1 5B163EAE
+P 5150 4400
+F 0 "#PWR035" H 5150 4250 50  0001 C CNN
+F 1 "+3.3V" H 5165 4573 50  0000 C CNN
+F 2 "" H 5150 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4400 5150 4450
+Connection ~ 5150 4450
+Text Label 1550 5050 0    50   ~ 0
+VOUT
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR036
+U 1 1 5B16C097
+P 1900 5250
+F 0 "#PWR036" H 1900 5100 50  0001 C CNN
+F 1 "+3.3V" H 1915 5423 50  0000 C CNN
+F 2 "" H 1900 5250 50  0001 C CNN
+F 3 "" H 1900 5250 50  0001 C CNN
+	1    1900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR037
+U 1 1 5B16C156
+P 1500 5400
+F 0 "#PWR037" H 1500 5150 50  0001 C CNN
+F 1 "Earth" H 1500 5250 50  0001 C CNN
+F 2 "" H 1500 5400 50  0001 C CNN
+F 3 "~" H 1500 5400 50  0001 C CNN
+	1    1500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5050 1550 5050
+Wire Wire Line
+	1450 5250 1900 5250
+Wire Wire Line
+	1450 4950 1500 4950
+Wire Wire Line
+	1500 4950 1500 5150
+Wire Wire Line
+	1500 5150 1450 5150
+Wire Wire Line
+	1500 5150 1500 5350
+Wire Wire Line
+	1500 5350 1450 5350
+Connection ~ 1500 5150
+Wire Wire Line
+	1500 5350 1500 5400
+Connection ~ 1500 5350
+$Comp
+L device:Crystal_GND24_Small Y1
+U 1 1 5B064B81
+P 9950 2200
+F 0 "Y1" V 9904 2366 50  0000 L CNN
+F 1 "8MHz HC5032/4" V 9995 2366 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_5032-4pin_5.0x3.2mm" H 9950 2200 50  0001 C CNN
+F 3 "" H 9950 2200 50  0001 C CNN
+	1    9950 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 2150 9800 2150
+Wire Wire Line
+	9800 2150 9800 2050
+Wire Wire Line
+	9800 2050 9950 2050
+Wire Wire Line
+	9950 2050 9950 2100
+Wire Wire Line
+	9950 2300 9950 2350
+Wire Wire Line
+	9950 2350 9800 2350
+Wire Wire Line
+	9800 2350 9800 2250
+Wire Wire Line
+	9800 2250 9650 2250
+$Comp
+L device:C C18
+U 1 1 5B089229
+P 10150 2550
+F 0 "C18" H 10265 2596 50  0000 L CNN
+F 1 "12p" H 10265 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10188 2400 50  0001 C CNN
+F 3 "" H 10150 2550 50  0001 C CNN
+	1    10150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C19
+U 1 1 5B0892B9
+P 10500 2550
+F 0 "C19" H 10615 2596 50  0000 L CNN
+F 1 "12p" H 10615 2505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10538 2400 50  0001 C CNN
+F 3 "" H 10500 2550 50  0001 C CNN
+	1    10500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2350 10150 2350
+Wire Wire Line
+	10150 2350 10150 2400
+Connection ~ 9950 2350
+Wire Wire Line
+	10500 2400 10500 2050
+Wire Wire Line
+	10500 2050 9950 2050
+Connection ~ 9950 2050
+$Comp
+L power:Earth #PWR010
+U 1 1 5B09C1C6
+P 10150 2750
+F 0 "#PWR010" H 10150 2500 50  0001 C CNN
+F 1 "Earth" H 10150 2600 50  0001 C CNN
+F 2 "" H 10150 2750 50  0001 C CNN
+F 3 "~" H 10150 2750 50  0001 C CNN
+	1    10150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR011
+U 1 1 5B09C3BD
+P 10500 2750
+F 0 "#PWR011" H 10500 2500 50  0001 C CNN
+F 1 "Earth" H 10500 2600 50  0001 C CNN
+F 2 "" H 10500 2750 50  0001 C CNN
+F 3 "~" H 10500 2750 50  0001 C CNN
+	1    10500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2700 10500 2750
+Wire Wire Line
+	10150 2700 10150 2750
+$Comp
+L device:C C15
+U 1 1 5B0AFE8E
+P 8500 950
+F 0 "C15" H 8615 996 50  0000 L CNN
+F 1 "100n" H 8615 905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8538 800 50  0001 C CNN
+F 3 "" H 8500 950 50  0001 C CNN
+	1    8500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C16
+U 1 1 5B0B095E
+P 8950 950
+F 0 "C16" H 9065 996 50  0000 L CNN
+F 1 "100n" H 9065 905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8988 800 50  0001 C CNN
+F 3 "" H 8950 950 50  0001 C CNN
+	1    8950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR013
+U 1 1 5B0B0C8E
+P 7700 1500
+F 0 "#PWR013" H 7700 1350 50  0001 C CNN
+F 1 "+3.3V" H 7715 1673 50  0000 C CNN
+F 2 "" H 7700 1500 50  0001 C CNN
+F 3 "" H 7700 1500 50  0001 C CNN
+	1    7700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR038
+U 1 1 5B0C4FBD
+P 8500 750
+F 0 "#PWR038" H 8500 600 50  0001 C CNN
+F 1 "+3.3V" H 8515 923 50  0000 C CNN
+F 2 "" H 8500 750 50  0001 C CNN
+F 3 "" H 8500 750 50  0001 C CNN
+	1    8500 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR039
+U 1 1 5B0C5655
+P 8950 750
+F 0 "#PWR039" H 8950 600 50  0001 C CNN
+F 1 "+3.3V" H 8965 923 50  0000 C CNN
+F 2 "" H 8950 750 50  0001 C CNN
+F 3 "" H 8950 750 50  0001 C CNN
+	1    8950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR040
+U 1 1 5B0C57B8
+P 8500 1150
+F 0 "#PWR040" H 8500 900 50  0001 C CNN
+F 1 "Earth" H 8500 1000 50  0001 C CNN
+F 2 "" H 8500 1150 50  0001 C CNN
+F 3 "~" H 8500 1150 50  0001 C CNN
+	1    8500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR041
+U 1 1 5B0C5946
+P 8950 1150
+F 0 "#PWR041" H 8950 900 50  0001 C CNN
+F 1 "Earth" H 8950 1000 50  0001 C CNN
+F 2 "" H 8950 1150 50  0001 C CNN
+F 3 "~" H 8950 1150 50  0001 C CNN
+	1    8950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1100 8950 1150
+Wire Wire Line
+	8500 1100 8500 1150
+Wire Wire Line
+	8500 750  8500 800 
+Wire Wire Line
+	8950 750  8950 800 
+$Comp
+L device:C C12
+U 1 1 5B10F150
+P 7700 2350
+F 0 "C12" H 7500 2400 50  0000 L CNN
+F 1 "100n" H 7400 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7738 2200 50  0001 C CNN
+F 3 "" H 7700 2350 50  0001 C CNN
+	1    7700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2150 7700 2150
+Wire Wire Line
+	7700 2150 7700 2200
+$Comp
+L power:Earth #PWR044
+U 1 1 5B11A0C5
+P 7700 2550
+F 0 "#PWR044" H 7700 2300 50  0001 C CNN
+F 1 "Earth" H 7700 2400 50  0001 C CNN
+F 2 "" H 7700 2550 50  0001 C CNN
+F 3 "~" H 7700 2550 50  0001 C CNN
+	1    7700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2500 7700 2550
+$Comp
+L device:C C20
+U 1 1 5B125C96
+P 10850 3800
+F 0 "C20" H 10965 3846 50  0000 L CNN
+F 1 "100n" H 10965 3755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10888 3650 50  0001 C CNN
+F 3 "" H 10850 3800 50  0001 C CNN
+	1    10850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R13
+U 1 1 5B12628E
+P 10850 3400
+F 0 "R13" H 10920 3446 50  0000 L CNN
+F 1 "10k" H 10920 3355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 10780 3400 50  0001 C CNN
+F 3 "" H 10850 3400 50  0001 C CNN
+	1    10850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR045
+U 1 1 5B13CB93
+P 10850 3200
+F 0 "#PWR045" H 10850 3050 50  0001 C CNN
+F 1 "+3.3V" H 10865 3373 50  0000 C CNN
+F 2 "" H 10850 3200 50  0001 C CNN
+F 3 "" H 10850 3200 50  0001 C CNN
+	1    10850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 3200 10850 3250
+Wire Wire Line
+	10850 3950 10850 4000
+$Comp
+L atmel:ATMEGA328P-AU U4
+U 1 1 5B1541CE
+P 8650 2650
+F 0 "U4" H 8700 4017 50  0000 C CNN
+F 1 "ATMEGA328P-AU" H 8700 3926 50  0000 C CNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 8650 2650 50  0001 C CIN
+F 3 "http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf" H 8650 2650 50  0001 C CNN
+	1    8650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1550 7700 1550
+Wire Wire Line
+	7700 1550 7700 1500
+Wire Wire Line
+	7750 1650 7700 1650
+Wire Wire Line
+	7700 1650 7700 1550
+Connection ~ 7700 1550
+Wire Wire Line
+	7750 1850 7700 1850
+Wire Wire Line
+	7700 1850 7700 1650
+Connection ~ 7700 1650
+Text Label 10850 3600 2    50   ~ 0
+RES
+Text Label 9650 3000 0    50   ~ 0
+RES
+$Comp
+L power:Earth #PWR047
+U 1 1 5B1991E9
+P 7700 3900
+F 0 "#PWR047" H 7700 3650 50  0001 C CNN
+F 1 "Earth" H 7700 3750 50  0001 C CNN
+F 2 "" H 7700 3900 50  0001 C CNN
+F 3 "~" H 7700 3900 50  0001 C CNN
+	1    7700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3900 7700 3850
+Wire Wire Line
+	7700 3650 7750 3650
+Wire Wire Line
+	7750 3750 7700 3750
+Connection ~ 7700 3750
+Wire Wire Line
+	7700 3750 7700 3650
+Wire Wire Line
+	7750 3850 7700 3850
+Connection ~ 7700 3850
+Wire Wire Line
+	7700 3850 7700 3750
+$Comp
+L device:C C14
+U 1 1 5B1C9B38
+P 8050 950
+F 0 "C14" H 8165 996 50  0000 L CNN
+F 1 "100n" H 8165 905 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8088 800 50  0001 C CNN
+F 3 "" H 8050 950 50  0001 C CNN
+	1    8050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR048
+U 1 1 5B1C9B3E
+P 8050 750
+F 0 "#PWR048" H 8050 600 50  0001 C CNN
+F 1 "+3.3V" H 8065 923 50  0000 C CNN
+F 2 "" H 8050 750 50  0001 C CNN
+F 3 "" H 8050 750 50  0001 C CNN
+	1    8050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR049
+U 1 1 5B1C9B44
+P 8050 1150
+F 0 "#PWR049" H 8050 900 50  0001 C CNN
+F 1 "Earth" H 8050 1000 50  0001 C CNN
+F 2 "" H 8050 1150 50  0001 C CNN
+F 3 "~" H 8050 1150 50  0001 C CNN
+	1    8050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1100 8050 1150
+Wire Wire Line
+	8050 750  8050 800 
+Wire Wire Line
+	9650 3150 9700 3150
+Wire Wire Line
+	9650 3250 9700 3250
+Text Label 9700 3150 0    50   ~ 0
+D0/RX
+Text Label 9700 3250 0    50   ~ 0
+D1/TX
+Text Label 9650 1550 0    50   ~ 0
+D8
+Text Label 9650 1650 0    50   ~ 0
+D9
+Text Label 9650 1850 0    60   ~ 0
+11(MISO)
+Text Label 9650 1950 0    60   ~ 0
+12(**/MOSI)
+Text Label 9650 2050 0    60   ~ 0
+13(SCK)
+Text Label 9650 2400 0    50   ~ 0
+A0
+Text Label 9650 2500 0    50   ~ 0
+A1
+Text Label 9650 2600 0    50   ~ 0
+A2
+Text Label 9650 2700 0    50   ~ 0
+A3
+Text Label 7750 2900 2    50   ~ 0
+A6
+Text Label 7750 3000 2    50   ~ 0
+A7
+Text Label 9650 3350 0    50   ~ 0
+D2
+Text Label 9650 3450 0    50   ~ 0
+D3
+Text Label 9650 3550 0    50   ~ 0
+D4
+Text Label 9650 3650 0    50   ~ 0
+D5
+Text Label 9650 3750 0    50   ~ 0
+D6
+Text Label 9650 3850 0    50   ~ 0
+D7
+$Comp
+L device:C C11
+U 1 1 5B24C6E8
+P 7350 4700
+F 0 "C11" H 7465 4746 50  0000 L CNN
+F 1 "100n" H 7465 4655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7388 4550 50  0001 C CNN
+F 3 "" H 7350 4700 50  0001 C CNN
+	1    7350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR050
+U 1 1 5B24C6EF
+P 7350 4500
+F 0 "#PWR050" H 7350 4350 50  0001 C CNN
+F 1 "+3.3V" H 7365 4673 50  0000 C CNN
+F 2 "" H 7350 4500 50  0001 C CNN
+F 3 "" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR051
+U 1 1 5B24C6F5
+P 7350 4900
+F 0 "#PWR051" H 7350 4650 50  0001 C CNN
+F 1 "Earth" H 7350 4750 50  0001 C CNN
+F 2 "" H 7350 4900 50  0001 C CNN
+F 3 "~" H 7350 4900 50  0001 C CNN
+	1    7350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4850 7350 4900
+Wire Wire Line
+	7350 4500 7350 4550
+$Comp
+L device:C C13
+U 1 1 5B24C6FD
+P 7800 4700
+F 0 "C13" H 7915 4746 50  0000 L CNN
+F 1 "10u" H 7915 4655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7838 4550 50  0001 C CNN
+F 3 "" H 7800 4700 50  0001 C CNN
+	1    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR052
+U 1 1 5B24C704
+P 7800 4500
+F 0 "#PWR052" H 7800 4350 50  0001 C CNN
+F 1 "+3.3V" H 7815 4673 50  0000 C CNN
+F 2 "" H 7800 4500 50  0001 C CNN
+F 3 "" H 7800 4500 50  0001 C CNN
+	1    7800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR053
+U 1 1 5B24C70A
+P 7800 4900
+F 0 "#PWR053" H 7800 4650 50  0001 C CNN
+F 1 "Earth" H 7800 4750 50  0001 C CNN
+F 2 "" H 7800 4900 50  0001 C CNN
+F 3 "~" H 7800 4900 50  0001 C CNN
+	1    7800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4500 7800 4550
+Wire Wire Line
+	7800 4850 7800 4900
+$Comp
+L power:VCC #PWR054
+U 1 1 5B2C2831
+P 1800 1400
+F 0 "#PWR054" H 1800 1250 50  0001 C CNN
+F 1 "VCC" H 1817 1573 50  0000 C CNN
+F 2 "" H 1800 1400 50  0001 C CNN
+F 3 "" H 1800 1400 50  0001 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1400 1800 1450
+Connection ~ 1800 1450
+$Comp
+L Connector:Conn_02x03_Odd_Even J4
+U 1 1 5B2D09CA
+P 5300 6700
+F 0 "J4" H 5350 7017 50  0000 C CNN
+F 1 "ISP" H 5350 6926 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 5300 6700 50  0001 C CNN
+F 3 "~" H 5300 6700 50  0001 C CNN
+	1    5300 6700
+	1    0    0    -1  
+$EndComp
+Text Label 5100 6600 2    60   ~ 0
+12(**/MOSI)
+Text Label 5100 6700 2    60   ~ 0
+13(SCK)
+Text Label 5100 6800 2    50   ~ 0
+RES
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR055
+U 1 1 5B2D22EF
+P 5650 6550
+F 0 "#PWR055" H 5650 6400 50  0001 C CNN
+F 1 "+3.3V" H 5665 6723 50  0000 C CNN
+F 2 "" H 5650 6550 50  0001 C CNN
+F 3 "" H 5650 6550 50  0001 C CNN
+	1    5650 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR056
+U 1 1 5B2D24DD
+P 5650 6850
+F 0 "#PWR056" H 5650 6600 50  0001 C CNN
+F 1 "Earth" H 5650 6700 50  0001 C CNN
+F 2 "" H 5650 6850 50  0001 C CNN
+F 3 "~" H 5650 6850 50  0001 C CNN
+	1    5650 6850
+	1    0    0    -1  
+$EndComp
+Text Label 5600 6700 0    60   ~ 0
+11(MISO)
+Wire Wire Line
+	5600 6600 5650 6600
+Wire Wire Line
+	5650 6600 5650 6550
+Wire Wire Line
+	5600 6800 5650 6800
+Wire Wire Line
+	5650 6800 5650 6850
+$Comp
+L Connector:Conn_01x06 J5
+U 1 1 5B2ED7C7
+P 6100 6750
+F 0 "J5" H 6020 6225 50  0000 C CNN
+F 1 "Conn_01x06" H 6020 6316 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 6100 6750 50  0001 C CNN
+F 3 "~" H 6100 6750 50  0001 C CNN
+	1    6100 6750
+	-1   0    0    1   
+$EndComp
+Text Label 6300 6450 0    50   ~ 0
+DTR
+$Comp
+L power:Earth #PWR057
+U 1 1 5B308BF7
+P 6350 7000
+F 0 "#PWR057" H 6350 6750 50  0001 C CNN
+F 1 "Earth" H 6350 6850 50  0001 C CNN
+F 2 "" H 6350 7000 50  0001 C CNN
+F 3 "~" H 6350 7000 50  0001 C CNN
+	1    6350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR058
+U 1 1 5B309256
+P 6650 6700
+F 0 "#PWR058" H 6650 6550 50  0001 C CNN
+F 1 "+3.3V" H 6665 6873 50  0000 C CNN
+F 2 "" H 6650 6700 50  0001 C CNN
+F 3 "" H 6650 6700 50  0001 C CNN
+	1    6650 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6950 6350 6950
+Wire Wire Line
+	6350 6950 6350 7000
+Text Label 6300 6650 0    50   ~ 0
+D0/RX
+Wire Wire Line
+	6650 6750 6650 6700
+Wire Wire Line
+	6300 6750 6650 6750
+Text Label 6300 6550 0    50   ~ 0
+D1/TX
+$Comp
+L power:Earth #PWR060
+U 1 1 5B370679
+P 7300 5650
+F 0 "#PWR060" H 7300 5400 50  0001 C CNN
+F 1 "Earth" H 7300 5500 50  0001 C CNN
+F 2 "" H 7300 5650 50  0001 C CNN
+F 3 "~" H 7300 5650 50  0001 C CNN
+	1    7300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR061
+U 1 1 5B3706F2
+P 9100 5700
+F 0 "#PWR061" H 9100 5450 50  0001 C CNN
+F 1 "Earth" H 9100 5550 50  0001 C CNN
+F 2 "" H 9100 5700 50  0001 C CNN
+F 3 "~" H 9100 5700 50  0001 C CNN
+	1    9100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR062
+U 1 1 5B37076B
+P 10150 5150
+F 0 "#PWR062" H 10150 4900 50  0001 C CNN
+F 1 "Earth" H 10150 5000 50  0001 C CNN
+F 2 "" H 10150 5150 50  0001 C CNN
+F 3 "~" H 10150 5150 50  0001 C CNN
+	1    10150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4850 1550 4850
+Text Label 1550 4850 0    50   ~ 0
+VBAT
+$Comp
+L Connector:Conn_01x06 J2
+U 1 1 5B07AB94
+P 1250 5150
+F 0 "J2" H 1170 4625 50  0000 C CNN
+F 1 "Conn_01x06" H 1170 4716 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 1250 5150 50  0001 C CNN
+F 3 "~" H 1250 5150 50  0001 C CNN
+	1    1250 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02 J3
+U 1 1 5B07B0C4
+P 1250 5800
+F 0 "J3" H 1170 5475 50  0000 C CNN
+F 1 "Conn_01x02" H 1170 5566 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1250 5800 50  0001 C CNN
+F 3 "~" H 1250 5800 50  0001 C CNN
+	1    1250 5800
+	-1   0    0    1   
+$EndComp
+Text Label 1450 5700 0    50   ~ 0
+VSOL
+$Comp
+L power:Earth #PWR01
+U 1 1 5B07B25B
+P 1500 5850
+F 0 "#PWR01" H 1500 5600 50  0001 C CNN
+F 1 "Earth" H 1500 5700 50  0001 C CNN
+F 2 "" H 1500 5850 50  0001 C CNN
+F 3 "~" H 1500 5850 50  0001 C CNN
+	1    1500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5800 1500 5800
+Wire Wire Line
+	1500 5800 1500 5850
+$Comp
+L Connector:Conn_01x04 J6
+U 1 1 5B085723
+P 1300 6500
+F 0 "J6" H 1220 6075 50  0000 C CNN
+F 1 "Conn_01x04" H 1220 6166 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 1300 6500 50  0001 C CNN
+F 3 "~" H 1300 6500 50  0001 C CNN
+	1    1300 6500
+	-1   0    0    1   
+$EndComp
+Text Label 1500 6300 0    50   ~ 0
+SDA
+Text Label 1500 6400 0    50   ~ 0
+SCL
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR02
+U 1 1 5B0862C7
+P 1900 5900
+F 0 "#PWR02" H 1900 5750 50  0001 C CNN
+F 1 "+3.3V" H 1915 6073 50  0000 C CNN
+F 2 "" H 1900 5900 50  0001 C CNN
+F 3 "" H 1900 5900 50  0001 C CNN
+	1    1900 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR03
+U 1 1 5B08651E
+P 1550 6650
+F 0 "#PWR03" H 1550 6400 50  0001 C CNN
+F 1 "Earth" H 1550 6500 50  0001 C CNN
+F 2 "" H 1550 6650 50  0001 C CNN
+F 3 "~" H 1550 6650 50  0001 C CNN
+	1    1550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6600 1550 6600
+Wire Wire Line
+	1550 6600 1550 6650
+$Comp
+L device:R R14
+U 1 1 5B09AFD6
+P 1750 6100
+F 0 "R14" H 1820 6146 50  0000 L CNN
+F 1 "4k7" H 1820 6055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 1680 6100 50  0001 C CNN
+F 3 "" H 1750 6100 50  0001 C CNN
+	1    1750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R15
+U 1 1 5B09B538
+P 2050 6100
+F 0 "R15" H 2120 6146 50  0000 L CNN
+F 1 "4k7" H 2120 6055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 1980 6100 50  0001 C CNN
+F 3 "" H 2050 6100 50  0001 C CNN
+	1    2050 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6300 1750 6300
+Wire Wire Line
+	1750 6300 1750 6250
+Wire Wire Line
+	1500 6400 2050 6400
+Wire Wire Line
+	2050 6400 2050 6250
+Wire Wire Line
+	1750 5950 1750 5900
+Wire Wire Line
+	1750 5900 1900 5900
+Wire Wire Line
+	2050 5900 2050 5950
+Connection ~ 1900 5900
+Wire Wire Line
+	1900 5900 2050 5900
+Wire Wire Line
+	2300 6500 2300 5900
+Wire Wire Line
+	2300 5900 2050 5900
+Wire Wire Line
+	1500 6500 2300 6500
+Connection ~ 2050 5900
+Text Label 9650 2800 0    50   ~ 0
+SDA
+Text Label 9650 2900 0    50   ~ 0
+SCL
+Text Label 9600 5400 0    50   ~ 0
+D5
+NoConn ~ 9650 3750
+NoConn ~ 9650 3850
+NoConn ~ 9650 1650
+Wire Wire Line
+	2300 1500 2300 1550
+Wire Wire Line
+	2550 1500 2550 1550
+Wire Wire Line
+	2800 1500 2800 1550
+$Comp
+L Connector:USB_B_Micro J7
+U 1 1 5B0A77BF
+P 3950 6750
+F 0 "J7" H 4005 7217 50  0000 C CNN
+F 1 "USB_B_Micro" H 4005 7126 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 4100 6700 50  0001 C CNN
+F 3 "~" H 4100 6700 50  0001 C CNN
+	1    3950 6750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 6750
+NoConn ~ 4250 6850
+$Comp
+L power:Earth #PWR04
+U 1 1 5B0BF1B7
+P 3900 7250
+F 0 "#PWR04" H 3900 7000 50  0001 C CNN
+F 1 "Earth" H 3900 7100 50  0001 C CNN
+F 2 "" H 3900 7250 50  0001 C CNN
+F 3 "~" H 3900 7250 50  0001 C CNN
+	1    3900 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 7150 3850 7200
+Wire Wire Line
+	3850 7200 3900 7200
+Wire Wire Line
+	3950 7200 3950 7150
+Wire Wire Line
+	3900 7200 3900 7250
+Connection ~ 3900 7200
+Wire Wire Line
+	3900 7200 3950 7200
+NoConn ~ 4250 6950
+Text Label 4250 6550 0    50   ~ 0
+VCC
+$Comp
+L device:R R16
+U 1 1 5B0722DF
+P 10350 3325
+F 0 "R16" H 10420 3371 50  0000 L CNN
+F 1 "330k" H 10420 3280 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10280 3325 50  0001 C CNN
+F 3 "" H 10350 3325 50  0001 C CNN
+	1    10350 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R17
+U 1 1 5B072659
+P 10350 3725
+F 0 "R17" H 10420 3771 50  0000 L CNN
+F 1 "100k" H 10420 3680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10280 3725 50  0001 C CNN
+F 3 "" H 10350 3725 50  0001 C CNN
+	1    10350 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR05
+U 1 1 5B072789
+P 10350 3925
+F 0 "#PWR05" H 10350 3675 50  0001 C CNN
+F 1 "Earth" H 10350 3775 50  0001 C CNN
+F 2 "" H 10350 3925 50  0001 C CNN
+F 3 "~" H 10350 3925 50  0001 C CNN
+	1    10350 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3925 10350 3875
+Wire Wire Line
+	10350 3575 10350 3525
+Text Label 10350 3125 0    50   ~ 0
+VBAT
+Wire Wire Line
+	10350 3175 10350 3125
+Wire Wire Line
+	10350 3525 10450 3525
+Connection ~ 10350 3525
+Wire Wire Line
+	10350 3525 10350 3475
+Text Label 10450 3525 0    50   ~ 0
+A0
+$Comp
+L device:C C17
+U 1 1 5B0C206B
+P 9400 950
+F 0 "C17" H 9515 996 50  0000 L CNN
+F 1 "10u" H 9515 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9438 800 50  0001 C CNN
+F 3 "" H 9400 950 50  0001 C CNN
+	1    9400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR06
+U 1 1 5B0C2071
+P 9400 750
+F 0 "#PWR06" H 9400 600 50  0001 C CNN
+F 1 "+3.3V" H 9415 923 50  0000 C CNN
+F 2 "" H 9400 750 50  0001 C CNN
+F 3 "" H 9400 750 50  0001 C CNN
+	1    9400 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR07
+U 1 1 5B0C2077
+P 9400 1150
+F 0 "#PWR07" H 9400 900 50  0001 C CNN
+F 1 "Earth" H 9400 1000 50  0001 C CNN
+F 2 "" H 9400 1150 50  0001 C CNN
+F 3 "~" H 9400 1150 50  0001 C CNN
+	1    9400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 750  9400 800 
+Wire Wire Line
+	9400 1100 9400 1150
+Wire Wire Line
+	10850 3550 10850 3650
+Wire Wire Line
+	6300 6850 6350 6850
+Wire Wire Line
+	6350 6850 6350 6950
+Connection ~ 6350 6950
+Text Label 10850 4000 2    50   ~ 0
+DTR
+Text Label 9650 1750 0    60   ~ 0
+10(**/SS)
+$Comp
+L power:Earth #PWR0101
+U 1 1 5C8AB04C
+P 9875 2475
+F 0 "#PWR0101" H 9875 2225 50  0001 C CNN
+F 1 "Earth" H 9875 2325 50  0001 C CNN
+F 2 "" H 9875 2475 50  0001 C CNN
+F 3 "~" H 9875 2475 50  0001 C CNN
+	1    9875 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9875 2475 9875 2400
+Wire Wire Line
+	9875 2400 9825 2400
+Wire Wire Line
+	9825 2400 9825 2200
+Wire Wire Line
+	9875 2400 10075 2400
+Wire Wire Line
+	10075 2400 10075 2200
+Connection ~ 9875 2400
+$Comp
+L Connector:Conn_01x01 J8
+U 1 1 5C8C870E
+P 7100 2750
+F 0 "J8" H 7179 2792 50  0000 L CNN
+F 1 "D2" H 7179 2701 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 2750 50  0001 C CNN
+F 3 "~" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01 J9
+U 1 1 5C8C93C4
+P 7100 2875
+F 0 "J9" H 7179 2917 50  0000 L CNN
+F 1 "D3" H 7179 2826 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 2875 50  0001 C CNN
+F 3 "~" H 7100 2875 50  0001 C CNN
+	1    7100 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01 J10
+U 1 1 5C8C945C
+P 7100 3000
+F 0 "J10" H 7180 3042 50  0000 L CNN
+F 1 "D4" H 7180 2951 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 3000 50  0001 C CNN
+F 3 "~" H 7100 3000 50  0001 C CNN
+	1    7100 3000
+	1    0    0    -1  
+$EndComp
+Text Label 6900 2750 2    50   ~ 0
+D2
+Text Label 6900 2875 2    50   ~ 0
+D3
+Text Label 6900 3000 2    50   ~ 0
+D4
+$Comp
+L Connector:Conn_01x01 J11
+U 1 1 5C8C9FCB
+P 7100 3250
+F 0 "J11" H 7180 3292 50  0000 L CNN
+F 1 "A1" H 7180 3201 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 3250 50  0001 C CNN
+F 3 "~" H 7100 3250 50  0001 C CNN
+	1    7100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01 J12
+U 1 1 5C8C9FD2
+P 7100 3375
+F 0 "J12" H 7180 3417 50  0000 L CNN
+F 1 "A2" H 7180 3326 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 3375 50  0001 C CNN
+F 3 "~" H 7100 3375 50  0001 C CNN
+	1    7100 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01 J13
+U 1 1 5C8C9FD9
+P 7100 3500
+F 0 "J13" H 7180 3542 50  0000 L CNN
+F 1 "A3" H 7180 3451 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 3500 50  0001 C CNN
+F 3 "~" H 7100 3500 50  0001 C CNN
+	1    7100 3500
+	1    0    0    -1  
+$EndComp
+Text Label 6900 3250 2    50   ~ 0
+A1
+Text Label 6900 3375 2    50   ~ 0
+A2
+Text Label 6900 3500 2    50   ~ 0
+A3
+Text Label 6900 3125 2    50   ~ 0
+D8
+$Comp
+L Connector:Conn_01x01 J14
+U 1 1 5C8E5E82
+P 7100 3125
+F 0 "J14" H 7180 3167 50  0000 L CNN
+F 1 "D8" H 7180 3076 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7100 3125 50  0001 C CNN
+F 3 "~" H 7100 3125 50  0001 C CNN
+	1    7100 3125
+	1    0    0    -1  
+$EndComp
+Text Notes 875  -175 0    168  ~ 34
+ToDo:\nChange ground symbols\n
+$EndSCHEMATC
