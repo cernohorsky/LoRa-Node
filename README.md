@@ -1,13 +1,13 @@
 # LoRa Node
 
-It uses the MCP73871 - USB/Solar panel charger and very nice TPS63031 Buck-Boost Converter. Main benefits of the board is small size and possibility to run literally forever from one small single cell LiPo battery.
+Simple, cheap, very small size Lora node with PCB antenna on 868 MHz. Compatible with FT232RL FTDI USB To TTL Serial Converter. I2C pin header.
 
 It's necessary to <b>burn bootloader with ISP before RFM95W module is soldered</b>.
 
 <b>ToDo:</b><br>
-Change ground symbols<br>
-Create BOM<br>
+Add antenna test pad<br>
+DRC<br>
 
-<img src="https://raw.githubusercontent.com/cernohorsky/loranode/master/LoRaNode.jpg" />
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/LoRaNode-View.jpg" />
 
-#RFM95W, #ATMEGA328P,  #TPS63031, #MCP7381, #Arduino
+#RFM95W, #ATMEGA328P, #Arduino
