@@ -624,9 +624,6 @@ Text Label 9000 4325 0    50   ~ 0
 SCL
 Text Label 3775 3100 0    50   ~ 0
 D5
-NoConn ~ 9000 5175
-NoConn ~ 9000 5275
-NoConn ~ 9000 3075
 $Comp
 L device:R R16
 U 1 1 5B0722DF
@@ -821,14 +818,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 5500 4050 5525
 Wire Wire Line
-	3800 5200 3750 5200
-Wire Wire Line
-	3750 5200 3750 5400
-Wire Wire Line
 	3750 5500 3875 5500
 Wire Wire Line
 	3800 5400 3750 5400
-Connection ~ 3750 5400
 Wire Wire Line
 	3750 5400 3750 5500
 $Comp
@@ -1090,17 +1082,62 @@ F 3 "" H 9850 4175 50  0001 C CNN
 	1    9850 4175
 	1    0    0    -1  
 $EndComp
+Text Label 3800 5200 2    50   ~ 0
+VBAT
 $Comp
 L Connector:Conn_01x01 J1
-U 1 1 5C90461F
-P 6450 5050
-F 0 "J1" H 6530 5092 50  0000 L CNN
-F 1 "A3" H 6530 5001 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6450 5050 50  0001 C CNN
-F 3 "~" H 6450 5050 50  0001 C CNN
-	1    6450 5050
+U 1 1 5C94DB3B
+P 5425 2425
+F 0 "J1" H 5504 2467 50  0000 L CNN
+F 1 "D2" H 5504 2376 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 5425 2425 50  0001 C CNN
+F 3 "~" H 5425 2425 50  0001 C CNN
+	1    5425 2425
 	1    0    0    -1  
 $EndComp
-Text Label 6250 5050 2    50   ~ 0
-VBAT
+Text Label 5225 2425 2    60   ~ 0
+ANT
+$Comp
+L Connector:Conn_01x01 J3
+U 1 1 5C9511AC
+P 5425 2550
+F 0 "J3" H 5504 2592 50  0000 L CNN
+F 1 "D2" H 5504 2501 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5425 2550 50  0001 C CNN
+F 3 "~" H 5425 2550 50  0001 C CNN
+	1    5425 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5C95121C
+P 5200 2600
+F 0 "#PWR0121" H 5200 2350 50  0001 C CNN
+F 1 "GND" H 5205 2427 50  0000 C CNN
+F 2 "" H 5200 2600 50  0001 C CNN
+F 3 "" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 2550 5200 2550
+Wire Wire Line
+	5200 2550 5200 2600
+NoConn ~ 7100 4325
+NoConn ~ 7100 4425
+Text Label 4725 2975 0    60   ~ 0
+ANT
+$Comp
+L power:GND #PWR0122
+U 1 1 5C95F96A
+P 4725 3025
+F 0 "#PWR0122" H 4725 2775 50  0001 C CNN
+F 1 "GND" H 4730 2852 50  0000 C CNN
+F 2 "" H 4725 3025 50  0001 C CNN
+F 3 "" H 4725 3025 50  0001 C CNN
+	1    4725 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 2975 4725 3025
 $EndSCHEMATC
