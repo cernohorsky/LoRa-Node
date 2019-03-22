@@ -5,9 +5,9 @@ Simple, cheap, very small size Lora node with PCB antenna on 868 MHz. Compatible
 It's necessary to <b>burn bootloader with ISP before RFM95W module is soldered</b>.
 
 <b>ToDo:</b><br>
-Add antenna test pad<br>
-DRC<br>
+Do all tests<br>
+
 
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/LoRaNode-View.jpg" />
 
-#RFM95W, #ATMEGA328P, #Arduino
+#RFM95W, #ATMEGA328P, #Arduino, #lora
