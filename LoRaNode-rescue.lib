@@ -1,0 +1,117 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue
+#
+DEF +3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# C-RESCUE-Arduino_Mini-Arduino_Mini-rescue
+#
+DEF C-RESCUE-Arduino_Mini-Arduino_Mini-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C-RESCUE-Arduino_Mini-Arduino_Mini-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CONN_01X04-RESCUE-Arduino_Mini-Arduino_Mini-rescue
+#
+DEF CONN_01X04-RESCUE-Arduino_Mini-Arduino_Mini-rescue J 0 40 Y N 1 F N
+F0 "J" 0 250 50 H V C CNN
+F1 "CONN_01X04-RESCUE-Arduino_Mini-Arduino_Mini-rescue" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -145 10 -155 0 1 0 N
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 155 10 145 0 1 0 N
+S -50 200 50 -200 0 1 0 N
+X P1 1 -200 150 150 R 50 50 1 1 P
+X P2 2 -200 50 150 R 50 50 1 1 P
+X P3 3 -200 -50 150 R 50 50 1 1 P
+X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# L-RESCUE-Arduino_Mini-Arduino_Mini-rescue
+#
+DEF L-RESCUE-Arduino_Mini-Arduino_Mini-rescue L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "L-RESCUE-Arduino_Mini-Arduino_Mini-rescue" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# RFM95W-868S2-RESCUE-Arduino_Mini-Arduino_Mini-rescue
+#
+DEF RFM95W-868S2-RESCUE-Arduino_Mini-Arduino_Mini-rescue U 0 40 Y Y 1 F N
+F0 "U" -410 460 50 H V L CNN
+F1 "RFM95W-868S2-RESCUE-Arduino_Mini-Arduino_Mini-rescue" 60 450 50 H V L CNN
+F2 "" -3300 1650 50 H I C CNN
+F3 "" -3300 1650 50 H I C CNN
+$FPLIST
+ Hopref?RFM9XW*
+$ENDFPLIST
+DRAW
+S -400 400 400 -500 0 1 10 f
+X GND 1 -100 -600 100 U 50 50 1 1 W
+X GND 10 100 -600 100 U 50 50 1 1 W
+X DIO3 11 500 -100 100 L 50 50 1 1 B
+X DIO4 12 500 0 100 L 50 50 1 1 B
+X 3.3V 13 0 500 100 D 50 50 1 1 W
+X DIO0 14 500 -400 100 L 50 50 1 1 B
+X DIO1 15 500 -300 100 L 50 50 1 1 B
+X DIO2 16 500 -200 100 L 50 50 1 1 B
+X MISO 2 -500 100 100 R 50 50 1 1 I
+X MOSI 3 -500 200 100 R 50 50 1 1 O
+X SCK 4 -500 300 100 R 50 50 1 1 I
+X NSS 5 -500 0 100 R 50 50 1 1 I
+X RESET 6 -500 -200 100 R 50 50 1 1 B
+X DIO5 7 500 100 100 L 50 50 1 1 B
+X GND 8 0 -600 100 U 50 50 1 1 W
+X ANT 9 500 300 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
