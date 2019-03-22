@@ -553,9 +553,9 @@ F 3 "~" H 1675 5550 50  0001 C CNN
 	1    1675 5550
 	-1   0    0    1   
 $EndComp
-Text Label 1875 5350 0    50   ~ 0
-SDA
 Text Label 1875 5450 0    50   ~ 0
+SDA
+Text Label 1875 5350 0    50   ~ 0
 SCL
 $Comp
 L LoRaNode-rescue:+3.3V-RESCUE-Arduino_Mini-Arduino_Mini-rescue #PWR02
@@ -1124,7 +1124,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2550 5200 2600
 NoConn ~ 7100 4325
-NoConn ~ 7100 4425
 Text Label 4725 2975 0    60   ~ 0
 ANT
 $Comp
@@ -1140,4 +1139,17 @@ F 3 "" H 4725 3025 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4725 2975 4725 3025
+$Comp
+L Connector:Conn_01x01 J7
+U 1 1 5C9520C6
+P 6450 5050
+F 0 "J7" H 6530 5092 50  0000 L CNN
+F 1 "A3" H 6530 5001 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6450 5050 50  0001 C CNN
+F 3 "~" H 6450 5050 50  0001 C CNN
+	1    6450 5050
+	1    0    0    -1  
+$EndComp
+Text Label 6250 5050 2    50   ~ 0
+A7
 $EndSCHEMATC
