@@ -47,7 +47,7 @@
     (user_trace_width 0.8)
     (user_trace_width 1)
     (user_trace_width 1.2)
-    (trace_clearance 0.1)
+    (trace_clearance 0.2)
     (zone_clearance 0.3)
     (zone_45_only no)
     (trace_min 0.2)
@@ -135,7 +135,7 @@
   (net 30 /A7)
 
   (net_class Default "This is the default net class."
-    (clearance 0.1)
+    (clearance 0.2)
     (trace_width 0.2)
     (via_dia 0.6)
     (via_drill 0.3)
