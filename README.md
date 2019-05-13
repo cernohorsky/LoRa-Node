@@ -10,7 +10,8 @@ Do all tests<br>
 
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/LoRaNode-View.jpg" />
 
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Final.jpg" />
 S11 Measurement
-<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/Measurement/LoRaNode-S11.jpg" />
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-S11.jpg" />
 
 #RFM95W, #ATMEGA328P, #Arduino, #lora
