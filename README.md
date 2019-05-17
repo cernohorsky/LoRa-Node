@@ -8,7 +8,7 @@ It's necessary to <b>burn bootloader with ISP before RFM95W module is soldered</
 Do all tests<br>
 
 
-<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/LoRaNode-View.jpg" />
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/develop/pictures/LoRaNode-View.jpg" />
 
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Final.jpeg" />
 S11 Measurement
