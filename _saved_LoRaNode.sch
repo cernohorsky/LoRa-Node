@@ -311,7 +311,7 @@ U 1 1 5B1541CE
 P 7425 3500
 F 0 "U4" H 7475 4867 50  0000 C CNN
 F 1 "ATMEGA328P-AU" H 7475 4776 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 7425 3500 50  0001 C CIN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7425 3500 50  0001 C CIN
 F 3 "http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf" H 7425 3500 50  0001 C CNN
 	1    7425 3500
 	1    0    0    -1  
