@@ -9,7 +9,7 @@ Do all tests<br>
 
 
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-View.jpg" />
-
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Schematic.jpg" />
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Final.jpeg" />
 S11 Measurement
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-S11.jpg" />
