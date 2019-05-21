@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LoRaNode-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -20,7 +20,7 @@ U 1 1 5A1D2B73
 P 3275 2700
 F 0 "U1" H 3275 3378 50  0000 C CNN
 F 1 "RFM95W-868S2" H 3625 3150 50  0000 C CNN
-F 2 "footprints:RFM95W" H -25 4350 50  0001 C CNN
+F 2 "riske:HOPERF_RFM95W_SMD" H -25 4350 50  0001 C CNN
 F 3 "" H -25 4350 50  0001 C CNN
 	1    3275 2700
 	1    0    0    -1  
@@ -126,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	4325 2800 4525 2800
 $Comp
-L device:Crystal_GND24_Small Y1
+L LoRaNode-rescue:Crystal_GND24_Small-device Y1
 U 1 1 5B064B81
 P 8725 3050
 F 0 "Y1" V 8679 3216 50  0000 L CNN
@@ -306,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 4650 5050 4700
 $Comp
-L atmel:ATMEGA328P-AU U4
+L LoRaNode-rescue:ATMEGA328P-AU-atmel U4
 U 1 1 5B1541CE
 P 7425 3500
 F 0 "U4" H 7475 4867 50  0000 C CNN
@@ -469,7 +469,7 @@ Wire Wire Line
 Wire Wire Line
 	1975 2550 1975 2600
 $Comp
-L Connector:Conn_02x03_Odd_Even J4
+L LoRaNode-rescue:Conn_02x03_Odd_Even-Connector J4
 U 1 1 5B2D09CA
 P 5325 5675
 F 0 "J4" H 5375 5992 50  0000 C CNN
@@ -507,7 +507,7 @@ Wire Wire Line
 Wire Wire Line
 	5675 5775 5675 5825
 $Comp
-L Connector:Conn_01x06 J5
+L LoRaNode-rescue:Conn_01x06-Connector J5
 U 1 1 5B2ED7C7
 P 6125 5725
 F 0 "J5" H 6045 5200 50  0000 C CNN
@@ -695,7 +695,7 @@ Wire Wire Line
 	8850 3250 8850 3050
 Connection ~ 8650 3250
 $Comp
-L Connector:Conn_01x01 J8
+L LoRaNode-rescue:Conn_01x01-Connector J8
 U 1 1 5C8C870E
 P 5875 3600
 F 0 "J8" H 5954 3642 50  0000 L CNN
@@ -706,7 +706,7 @@ F 3 "~" H 5875 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01 J9
+L LoRaNode-rescue:Conn_01x01-Connector J9
 U 1 1 5C8C93C4
 P 5875 3725
 F 0 "J9" H 5954 3767 50  0000 L CNN
@@ -790,7 +790,7 @@ Connection ~ 3700 5625
 Wire Wire Line
 	3700 5625 3875 5625
 $Comp
-L Connector:Conn_01x03 J2
+L LoRaNode-rescue:Conn_01x03-Connector J2
 U 1 1 5C8DF54E
 P 3375 5350
 F 0 "J2" H 3455 5392 50  0000 L CNN
@@ -1089,7 +1089,7 @@ Wire Wire Line
 	3925 4175 3925 4150
 Connection ~ 3925 4150
 $Comp
-L Connector:Conn_01x09 J1
+L LoRaNode-rescue:Conn_01x09-Connector J1
 U 1 1 5CE46114
 P 1675 5750
 F 0 "J1" H 1595 5125 50  0000 C CNN

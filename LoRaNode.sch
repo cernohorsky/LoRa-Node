@@ -20,7 +20,7 @@ U 1 1 5A1D2B73
 P 3275 2700
 F 0 "U1" H 3275 3378 50  0000 C CNN
 F 1 "RFM95W-868S2" H 3625 3150 50  0000 C CNN
-F 2 "riske:HOPERF_RFM95W_SMD" H -25 4350 50  0001 C CNN
+F 2 "MYLIB:HOPERF_RFM95W_SMD" H -25 4350 50  0001 C CNN
 F 3 "" H -25 4350 50  0001 C CNN
 	1    3275 2700
 	1    0    0    -1  
@@ -311,7 +311,7 @@ U 1 1 5B1541CE
 P 7425 3500
 F 0 "U4" H 7475 4867 50  0000 C CNN
 F 1 "ATMEGA328P-AU" H 7475 4776 50  0000 C CNN
-F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 7425 3500 50  0001 C CIN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 7425 3500 50  0001 C CIN
 F 3 "http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf" H 7425 3500 50  0001 C CNN
 	1    7425 3500
 	1    0    0    -1  
@@ -1142,4 +1142,28 @@ Wire Wire Line
 	3475 4425 3475 4500
 Wire Wire Line
 	3475 4500 3600 4500
+$Comp
+L Connector:Conn_01x01 J3
+U 1 1 5CE3EE9D
+P 8500 5525
+F 0 "J3" H 8580 5567 50  0000 L CNN
+F 1 "Conn_01x01" H 8580 5476 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8500 5525 50  0001 C CNN
+F 3 "~" H 8500 5525 50  0001 C CNN
+	1    8500 5525
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8300 5525
+$Comp
+L Connector:Conn_01x01 J6
+U 1 1 5CE4A02D
+P 8500 5725
+F 0 "J6" H 8580 5767 50  0000 L CNN
+F 1 "Conn_01x01" H 8580 5676 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8500 5725 50  0001 C CNN
+F 3 "~" H 8500 5725 50  0001 C CNN
+	1    8500 5725
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8300 5725
 $EndSCHEMATC
