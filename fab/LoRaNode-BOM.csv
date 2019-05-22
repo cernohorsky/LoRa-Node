@@ -1,0 +1,20 @@
+Id;Designator;Package;Quantity;Designation;Supplier and ref
+17;C1,C6,C7,C8,C9,C5;C_0603_1608Metric;6;100n;
+7;C10,C2;C_0805_2012Metric;2;10u;
+18;C11,C12;C_0603_1608Metric;2;12p;
+16;C3,C4;C_0402_1005Metric;2;dnp;
+15;D1;LED_1206_3216Metric;1;LED;
+13;J1;PinSocket_1x09_P2.54mm_Vertical;1;Conn_01x09;
+9;J2;PinHeader_1x03_P2.54mm_Vertical;1;Conn_01x03;
+2;J3;Pin_Header_Straight_2x03_Pitch2.54mm;1;ISP;
+3;J6;Pin_Header_Straight_1x06_Pitch2.54mm;1;Conn_01x06;
+19;L1;L_0402_1005Metric;1;0R;
+21;R1,R2;R_0603_1608Metric;2;4k7;
+14;R3;R_0603_1608Metric;1;1k;
+5;R5;R_0603_1608Metric;1;330k;
+6;R6,R4;R_0603_1608Metric;2;100k;
+20;R7;R_0603_1608Metric;1;10k;
+11;SW1;SMD-PushButton-6x3.6mm;1;SW_Push;
+1;U1;HOPERF_RFM95W_SMD;1;RFM95W-868S2;
+22;U2;TQFP-32_7x7mm_P0.8mm;1;ATMEGA328P-AU;
+4;Y1;Crystal_SMD_5032-4pin_5.0x3.2mm;1;8MHz HC5032/4;
