@@ -11,8 +11,10 @@ Do all tests<br>
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-View.jpg" />
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Schematic.jpg" />
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-Final.jpeg" />
-S11 Measurement
+*S11 Measurement*
 <img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-S11.jpg" />
+*Sleep current measurement*
+<img src="https://github.com/cernohorsky/LoRa-Node/blob/master/pictures/LoRaNode-SleepCurrent.jpg" />
 
 Based on: http://www.ti.com/lit/an/swra228c/swra228c.pdf
 
